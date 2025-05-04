@@ -1,0 +1,16 @@
+streamlit
+pandas
+yfinance
+ta
+datetime
+scikit-learn
+xgboost
+plotly
+textblob
+numpy
+scipy
+pytz
+requests
+newsapi
+alpha_vantage
+nltk
