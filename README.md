@@ -14,35 +14,34 @@ StockSense AI is a powerful stock market analysis and prediction platform that c
 - **Fundamental Data**: Key financial ratios and metrics
 - **Beautiful Visualization**: Interactive Plotly charts with dark mode support
 
-## 🛠️ Installation
-
-1. Clone the repository:
-```bash
+## Installation
+```python
 git clone https://github.com/yourusername/StockSense-AI.git
 cd StockSense-AI
 
+```
 2 .Create and activate a virtual environment:
-```bash
+```python
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
+```
 3. 3. Install dependencies:
 ```bash
 pip install -r requirements.txt
-
+```
 4. Run the application:
 ```bash
 streamlit run app.py
 
-
+```
 The application will open in your default browser at http://localhost:8501
 
 
 ### note: 
 - You need to have an API key from Alpha Vantage, News API, and Polygon for the application to work.
-ALPHA_VANTAGE_API_KEY=your_key_here
-MARKETSTACK_API_KEY=your_key_here
-NEWSAPI_API_KEY=your_key_here
+1. ALPHA_VANTAGE_API_KEY=your_key_here
+2. MARKETSTACK_API_KEY=your_key_here
+3. NEWSAPI_API_KEY=your_key_here
 
 
 ## Application Workflow:
