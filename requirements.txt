@@ -14,3 +14,4 @@ requests
 newsapi
 alpha_vantage
 nltk
+torch>=2.0.0
