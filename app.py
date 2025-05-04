@@ -23,13 +23,11 @@ from alpha_vantage.fundamentaldata import FundamentalData
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-try:
-    from newsapi import NewsApiClient
-except ImportError:
-    # Fallback for Streamlit cloud environment
-    from newsapi_python_client import NewsApiClient
+from newsapi.newsapi_client import NewsApiClient
 
-# Add this after imports but before other code
+# Ensuring scaler is defined before usage
+scaler = StandardScaler()
+
 # API Configuration
 ALPHA_VANTAGE_API_KEY = 'X9M080OGNUZXJYKW'  # Your Alpha Vantage key
 MARKETSTACK_API_KEY = 'e0e0dd21b49091ac40772dde48146fbd'  # Your Marketstack key
