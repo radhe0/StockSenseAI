@@ -11,7 +11,7 @@ numpy
 scipy
 pytz
 requests
-newsapi-python-client
+newsapi-python
 alpha_vantage
 nltk
 torch
