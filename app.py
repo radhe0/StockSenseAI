@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import yfinance as yf
-from newsapi import NewsApiClient
 from alpha_vantage.timeseries import TimeSeries
 from textblob import TextBlob
 import requests
@@ -24,7 +23,11 @@ from alpha_vantage.fundamentaldata import FundamentalData
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-
+try:
+    from newsapi import NewsApiClient
+except ImportError:
+    # Fallback for Streamlit cloud environment
+    from newsapi_python_client import NewsApiClient
 
 # Add this after imports but before other code
 # API Configuration
